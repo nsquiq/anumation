@@ -180,22 +180,20 @@ fun WoofDarkThemePreview(){
 @Composable
 fun WoofTopAppBar(modifier: Modifier= Modifier) {
 
-            Row(
-                verticalAlignment = Alignment.CenterVertically
-            ){
-                Image(
-                    modifier = Modifier
-                        .size(dimensionResource(id = R.dimen.image_size))
-                        .padding(dimensionResource(id = R.dimen.padding_small)),
-                    painter = painterResource(R.drawable.ic_woof_logo),
-                    contentDescription = null
-                )
-                Text(
-                    text = stringResource(R.string.app_name),
-                    style = MaterialTheme.typography.displayLarge
-                )
+    Row(
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Image(
+            modifier = Modifier
+                .size(dimensionResource(id = R.dimen.image_size))
+                .padding(dimensionResource(id = R.dimen.padding_small)),
+            painter = painterResource(R.drawable.ic_woof_logo),
+            contentDescription = null
+        )
+        Text(
+            text = stringResource(R.string.app_name),
+            style = MaterialTheme.typography.displayLarge
+        )
 
-        }
-
-
+    }
 }
